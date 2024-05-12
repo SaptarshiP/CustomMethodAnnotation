@@ -4,7 +4,13 @@ import java.lang.Class;
 import java.lang.reflect.Method;
 
 public class CustomAnnotationCheck {
-
+	
+	/*
+	 * We have got the access the custom class using reflection api and searching for the method with
+	 * name and then checking that method is annoted with particular annotation then only
+	 * we will invoke the method other wise will exceute the else clause
+	 * */
+	
 	public static void main( String args[] ) {
 		try {
 			Class clazz =  CustomAnnotationCheck.class;
